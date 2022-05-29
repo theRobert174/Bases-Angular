@@ -8,18 +8,22 @@ import { HomeComponent } from './pages/home/home.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MenuComponent } from './components/menu/menu.component';
+import { PagesModule } from './pages/pages.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    ContactComponent,
-    HomeComponent,
+    // AboutComponent,
+    // ContactComponent,
+    // HomeComponent,
     MenuComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
