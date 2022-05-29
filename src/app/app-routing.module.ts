@@ -16,6 +16,10 @@ const routes : Routes = [
     path : 'contact', component : ContactComponent
   },
   {
+    path : 'posts', //loadChildren : './pages/posts/post.module#PostsModule' //Estandar de angular old / deprecated
+    loadChildren : () => import('./pages/posts/posts.module').then(m => m.PostsModule) //Estandar de ionic
+  },
+  {
     path: '**', redirectTo : 'home'
   }
 ];
